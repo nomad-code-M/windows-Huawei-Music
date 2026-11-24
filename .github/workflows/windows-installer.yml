@@ -17,11 +17,11 @@ on:
         description: Publish/refresh the GitHub Release for the current version tag
         type: boolean
         default: true
-  push:
-    branches:
-      - main
-    tags:
-      - 'v*'
+ # push:
+ #   branches:
+ #     - main
+ #   tags:
+ #     - 'v*'
 
 permissions:
   contents: write
