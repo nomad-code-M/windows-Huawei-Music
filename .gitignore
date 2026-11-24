@@ -1,0 +1,35 @@
+# ===== 本地研究与凭据（绝不能提交）=====
+# 接口/协议研究记录，可能含临时 URL 或会话材料
+research/
+# 本地研究脚本使用的真实会话、令牌等敏感数据
+.local/
+
+# ===== 环境变量（可能含密钥）=====
+# 本地环境变量文件
+.env
+# 各环境的环境变量文件（如 .env.production）
+.env.*
+# 例外：示例模板必须保留，供协作者参考格式（不含真实密钥）
+!.env.example
+
+# ===== 依赖与构建产物（体积大，可重新生成）=====
+# npm install 下载的依赖包，几百 MB，换机器重新装即可
+node_modules/
+# electron-vite 编译产物（npm start / npm run build 生成）
+out/
+# electron-builder 打包产物（安装包、便携版 zip）
+release/
+# 通用构建输出目录（备用）
+dist/
+
+# ===== Python 缓存（图标生成等研究脚本用）=====
+# Python 字节码缓存目录
+__pycache__/
+# Python 编译后的单个字节码文件
+*.pyc
+
+# ===== 编辑器配置、系统垃圾文件 =====
+.vscode/
+*.log
+.DS_Store
+Thumbs.db
